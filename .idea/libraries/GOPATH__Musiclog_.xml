@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;Musiclog&gt;">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Tools/Go/src/gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../WebApp/src/com.issahar" />
+      <root url="file://$USER_HOME$/Tools/Go/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../Patents/src/com" />
+      <root url="file://$PROJECT_DIR$/../bsn-log-uploader/src/loguploader" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Tools/Go/src/gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../WebApp/src/com.issahar" />
+      <root url="file://$USER_HOME$/Tools/Go/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../Patents/src/com" />
+      <root url="file://$PROJECT_DIR$/../bsn-log-uploader/src/loguploader" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
