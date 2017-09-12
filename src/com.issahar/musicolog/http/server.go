@@ -1,11 +1,29 @@
-package model
+package http
 
 import (
+	"net/http"
+	"log"
+	"fmt"
+	"github.com/julienschmidt/httprouter"
 	"strings"
 	"io/ioutil"
-	"fmt"
 	"os"
 )
+
+var router = httprouter.New()
+
+
+func Hello(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
+	fmt.Fprintf(w, "Hello!")
+}
+
+
+func main() {
+	router.GET("/hello", Hello)
+
+	log.Fatal(http.ListenAndServe(":8080", router))
+}
+
 
 
 
@@ -74,3 +92,4 @@ func FindSongForArtist(artist os.FileInfo, name string, ch chan []Song) error {
 
 	return nil
 }
+
